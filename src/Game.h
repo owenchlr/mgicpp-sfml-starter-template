@@ -27,7 +27,7 @@ class Game
   sf::Sprite bird = sf::Sprite(bird_texture);
 
   sf::Font font1{ "../Data/Fonts/OpenSans-Bold.ttf" };
-  sf::Text text = sf::Text(font1);
+  sf::Text title_text = sf::Text(font1, "WHACKIN MOLESSSS");
 };
 
 #endif // SFML_GAME_H

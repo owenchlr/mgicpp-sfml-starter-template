@@ -32,7 +32,8 @@ bool Game::init()
 	{
 		std::cout << "fon1 did not load";
 	}
-	text.setString("WHACKAMOOOOLLLLEEEE");
+
+	title_text.setPosition({ window.getSize().x / 2, window.getSize().y / 2 });
   return true;
 }
 
@@ -48,7 +49,7 @@ void Game::render()
 {
 	window.draw(background);
 	window.draw(bird);
-	window.draw(text);
+	window.draw(title_text);
 }
 
 //Called by event polling when a MouseButtonPressed event is found
