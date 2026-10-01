@@ -19,9 +19,15 @@ class Game
 
  private:
   sf::RenderWindow& window;
-  sf::Sprite background = sf::Sprite(background_texture);
-  sf::Texture background_texture;
 
+  sf::Texture background_texture{ "../Data/Images/WhackaMole Worksheet/background.png" };
+  sf::Sprite background = sf::Sprite(background_texture);
+
+  sf::Texture bird_texture{ "../Data/Images/WhackaMole Worksheet/bird.png" };
+  sf::Sprite bird = sf::Sprite(bird_texture);
+
+  sf::Font font1{ "../Data/Fonts/OpenSans-Bold.ttf" };
+  sf::Text text = sf::Text(font1);
 };
 
 #endif // SFML_GAME_H

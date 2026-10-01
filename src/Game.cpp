@@ -20,7 +20,19 @@ bool Game::init()
 	{
 		std::cout << "background texture did not load \n";
 	}
-	
+
+	if (!bird_texture.loadFromFile("../Data/Images/WhackaMole Worksheet/bird.png"))
+	{
+		std::cout << "bird texture did not load \n";
+	}
+	bird.setPosition({ 50, 100 });
+	bird.setScale({ 0.5, 0.5 });
+
+	if (!font1.openFromFile("../Data/Fonts/OpenSans-Bold.ttf"))
+	{
+		std::cout << "fon1 did not load";
+	}
+	text.setString("WHACKAMOOOOLLLLEEEE");
   return true;
 }
 
@@ -35,6 +47,8 @@ void Game::update(float dt)
 void Game::render()
 {
 	window.draw(background);
+	window.draw(bird);
+	window.draw(text);
 }
 
 //Called by event polling when a MouseButtonPressed event is found
