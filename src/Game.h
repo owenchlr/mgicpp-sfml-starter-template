@@ -19,7 +19,8 @@ class Game
 
  private:
   sf::RenderWindow& window;
-  
+  sf::Sprite background = sf::Sprite(background_texture);
+  sf::Texture background_texture;
 
 };
 

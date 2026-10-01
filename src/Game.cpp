@@ -16,7 +16,11 @@ Game::~Game()
 // We call this once after the game class is instantiated
 bool Game::init()
 {
-
+	if (!background_texture.loadFromFile("../Data/Images/WhackaMole Worksheet/background.png"))
+	{
+		std::cout << "background texture did not load \n";
+	}
+	
   return true;
 }
 
@@ -30,7 +34,7 @@ void Game::update(float dt)
 // Runs after update, use it to tell the window what to draw this frame
 void Game::render()
 {
-
+	window.draw(background);
 }
 
 //Called by event polling when a MouseButtonPressed event is found
