@@ -21,6 +21,9 @@ int main()
       return 0;
   }
 
+  //TEST COMMIT
+  // 
+ 
   // A Clock starts counting as soon as it's created
   sf::Clock clock;
 
