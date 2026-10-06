@@ -33,7 +33,7 @@ bool Game::init()
 		std::cout << "fon1 did not load";
 	}
 
-	title_text.setPosition({window.getSize().x / 2, window.getSize().y / 2 });
+	title_text.setPosition({float(window.getSize().x / 2), float(window.getSize().y / 2)});
   return true;
 }
 
